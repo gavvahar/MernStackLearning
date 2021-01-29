@@ -1,0 +1,12 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  display: flex;
+}
+ul.header-menu {
+  display: flex;
+  margin: 0;
+  list-style: none;
+}

@@ -1,0 +1,10 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+.basic-table {
+  border: 1px solid grey;
+}
+
+.basic-table tr td {
+  border: 1px solid grey;
+}
