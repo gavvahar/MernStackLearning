@@ -10,3 +10,14 @@ ul.header-menu {
   margin: 0;
   list-style: none;
 }
+
+.parent {
+  display: flex;
+}
+
+.box {
+  width: 200px;
+  height: 100px;
+  background-color: red;
+  margin: 5px;  
+}
