@@ -22,3 +22,7 @@ var x = () => {
 console.log(x());
 var y = () => 'nihar....';
 console.log(y());
+
+
+var car = () => 'Tesla Roadster';
+console.log(car());
