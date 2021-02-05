@@ -8,6 +8,7 @@ function abc() {
 var xyz  = function () {
   var b = 20;
   console.log("xyz ....");
+  console.log(b);
 }
 
 // IIFE
