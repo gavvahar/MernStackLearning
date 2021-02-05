@@ -10,3 +10,5 @@ var a = {
   z: true,
   dateObj: new Date(),
 };
+
+console.log(a);
