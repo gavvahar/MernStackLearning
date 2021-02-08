@@ -13,7 +13,7 @@ var a = {
 console.log(a);
 var t =
 {
-  y:1967
+  y:1967,
   c: 'Mustang Shelby GT500',
   obj:
   {
