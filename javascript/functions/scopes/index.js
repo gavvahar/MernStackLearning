@@ -16,13 +16,13 @@ if(true) {      // while, for, ...
 
 }
 
-//console.log("outside: ", x);
+console.log("outside: ", x);
 
 
-for(let i = 0; i< 10; i++) {
+for(var i = 0; i< 10; i++) {
   console.log(i);
 }
-//console.log("outside: ", i);
+console.log('outside: ', i);
 
 for(let c = 0; c <=10; c++)
 {
