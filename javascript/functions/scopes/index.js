@@ -27,6 +27,6 @@ console.log('outside: ', i);
 for(let c = 0; c <=10; c++)
 {
   let i;
-  i = c*c;
+  i = Math.pow(c,2);
   console.log(i);
 }
