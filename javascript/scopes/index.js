@@ -23,3 +23,11 @@ for(let i = 0; i< 10; i++) {
   console.log(i);
 }
 console.log("outside: ", i);
+var t;
+for(let car = 1; car <= 10; car++)
+{
+  if(car <= 5)
+  {
+    t = '';
+  }
+}
