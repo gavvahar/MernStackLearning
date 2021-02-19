@@ -25,6 +25,7 @@ function car()
 }
 
 car.prototype.y = 'Viper';
+car.prototype.t = 'Charger'
 car.prototype.test = function() {
 consol.log(test);
 };
