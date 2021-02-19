@@ -26,3 +26,4 @@ var t =
   z: true,
   dateObj: new Date(),
 };
+console.log(t);
