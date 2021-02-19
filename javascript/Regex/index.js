@@ -11,7 +11,7 @@ var model = 'Nissan GTR';
 console.log(car.test(model));
 console.log(model.match(car));
 
-car = /Ford/s;
+car = /Ford/i;
 model = 'Ford Mustang';
 console.log(car.test(model));
 console.log(model.match(car));
