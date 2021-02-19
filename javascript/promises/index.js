@@ -54,5 +54,40 @@ async function checkWork() {
   }; 
   
 }
-
 checkWork();
+
+
+var t = new Promise(function(resolve, reject)
+{
+  reject("Failed");
+});
+
+var u = new Promise(function(resolve, reject)
+{
+  resolve('PersonB - I am done success');
+});
+
+Promise.all([t, u])
+  .then(([res3, res4]) => console.log(res3, res4))
+  .catch(err => console.log(err));
+
+
+
+  async function myCar()
+  {
+    return new Promise(function(resolve, reject)
+    {
+    reject("Engine Failed");
+    });
+  }
+  
+  async function checkEngine() {
+    try{
+      const res5 = await myCar();
+      console.log(res5);
+    } catch (err) {
+      console.log(err)
+    }; 
+    
+  }
+  checkEngine();
