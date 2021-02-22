@@ -20,7 +20,7 @@
 
 // var tataCarObj = new tataCar();
 
-class Car {
+class Car1 {
   constructor(door) {
     this.wheels = 4;
     this.door = door;
@@ -31,7 +31,7 @@ class Car {
   }
 }
 
-class tataCar extends Car {
+class tataCar extends Car1 {
   constructor() {
     super(10);
     this.name = "tata";
@@ -40,3 +40,29 @@ class tataCar extends Car {
 }
 
 var tataCarObj = new tataCar();
+
+
+class Car
+{
+  constructor(door)
+  {
+    this.wheels = 4;
+    this.door = door;
+  }
+  cleaning()
+  {
+    console.log("Car cleaning Name: ", this.name);
+  }
+}
+
+class ferrariCar extends Car
+{
+  constructor()
+  {
+    super(2);
+    this.name = "Ferrari";
+    this.color = "red";
+  }
+}
+
+var ferrariCarObj = new ferrariCar();
