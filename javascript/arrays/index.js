@@ -10,6 +10,9 @@ t.map(x => console.log(x));
 //map
 var t = [1967, 2015, 2020, 2021];
 console.log(t.map(x => x*2));
+console.log(t.map(function(x) {
+  return x*2;
+}));
 
 //reduce
 console.log(t.reduce((acc, a) => {
