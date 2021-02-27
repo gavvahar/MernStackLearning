@@ -33,8 +33,8 @@ function displayValues()
   console.log(lname.value);
   console.log(email.value);
   console.log(phone.value);
-  //console.log(password.value);
-  //console.log(confirm_password.value);
+  console.log(password.value);
+  console.log(confirm_password.value);
   console.log(male.value);
   console.log(female.value);
   console.log(other.value);
