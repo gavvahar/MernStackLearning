@@ -19,3 +19,12 @@ class Car extends Vehicle {
 
 const carObj = new Car(10);
 
+class Model extends Car
+{
+  constructor(a)
+  {
+    super(a);
+   }
+}
+
+const modelObj = new Model(1967);
