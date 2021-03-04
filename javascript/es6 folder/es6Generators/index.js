@@ -11,6 +11,7 @@ function * abc() {
 
 const obj = abc();
 console.log(obj.next().value);
+//console.log(obj.next().value);
 
 
 // fetch('https://jsonplaceholder.typicode.com/users')
@@ -22,3 +23,18 @@ console.log(obj.next().value);
 //   let jsonRes = request.json();
 //   return jsonRes;
 // }
+
+function * car()
+{
+  const c = 2012;
+  console.log(c);
+  yield 'Mustang';
+  console.log('Shelby');
+  yield 'GT500';
+  console.log('Super Snake');
+}
+const obj1 = car();
+for(let t = 0; t < 3; t++)
+{
+  console.log(obj1.next().value);
+}
