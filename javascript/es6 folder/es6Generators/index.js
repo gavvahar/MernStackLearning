@@ -38,3 +38,17 @@ for(let t = 0; t < 3; t++)
 {
   console.log(obj1.next().value);
 }
+function * car1()
+{
+  const c = 2022;
+  console.log(c);
+  yield 'Lexus';
+  console.log('IS');
+  yield '500';
+  console.log('F-Sport');
+}
+const obj2 = car1();
+for(let t = 0; t < 3; t++)
+{
+  console.log(obj2.next().value);
+}
