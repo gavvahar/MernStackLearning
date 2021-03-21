@@ -1,0 +1,20 @@
+body
+{
+    background-color: blue;
+}
+
+h1
+{
+    color: gray;
+    text-align: center;
+}
+
+p
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: yellow;
+    max-width: 250px;
+    height: 100px;
+    background-color: red;
+}
