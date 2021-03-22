@@ -1,0 +1,8 @@
+div
+{
+    height: 50px;
+    text-align: center;
+    width: 10%;
+    border: 5px double white;
+    color: red;
+}
