@@ -9,8 +9,9 @@ h1
     text-align: center;
 }
 
-p
+p.og
 {
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
+    color: yellow;
 }
