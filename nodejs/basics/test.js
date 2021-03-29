@@ -21,7 +21,7 @@ console.log(t.map(x => x*2));
 console.log(t.map(function(x) {
   return x*4;
 }));
-
+debugger;
 console.log(t.filter(x => x !== 2020));
 
 
@@ -54,5 +54,7 @@ class subaruCar extends Car {
 }
 
 var subaruCarObj = new subaruCar();
-console.log(subaruCarObj.getName());
-console.log(subaruCarObj.getColor());
+// console.log(subaruCarObj.getName());
+// console.log(subaruCarObj.getColor());
+
+module.exports = subaruCar;
