@@ -5,3 +5,6 @@ console.log(buf[2]) //121
 console.log(buf.toString())
 
 const buf2 = Buffer.alloc(1024);
+
+const car = Buffer.from('Nissan GTR');
+console.log(car[0])
