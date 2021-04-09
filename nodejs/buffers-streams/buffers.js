@@ -8,3 +8,8 @@ const buf2 = Buffer.alloc(1024);
 
 const car = Buffer.from('Nissan GTR');
 console.log(car[0])
+console.log(car[1])
+console.log(car[2])
+console.log(car.toString())
+
+const car2 = Buffer.alloc(1967);
