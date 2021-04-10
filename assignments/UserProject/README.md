@@ -11,7 +11,7 @@ Server side
   Create an API to get list of users 
     [{
       firstName: 'Nihar', 
-      lastName: 'garve' 
+      lastName: 'Gavva' 
       email: 'test@test.com',
       phoneNumber: '232323232'
     }]
