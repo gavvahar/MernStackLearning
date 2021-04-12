@@ -1,14 +1,23 @@
-/*var fname1 = document.getElementById("fname");
-function displayValues()
+function addUser()
 {
-  sessionStorage.setItem("name",fname1);
-  document.getElementById("demo").innerHTML= fname1;//sessionStorage.getItem("name");
-}*/
+  var person = new Object();
+  var fname = document.getElementById("fname")
+  , lname = document.getElementById("lname")
+  , email = document.getElementById("email")
+  , phone = document.getElementById("phone");
 
-let xhr = new document.body();
-xhr.responseType = 'html'
-function displayValues()
+  person.fname = fname;
+  person.lname = lname;
+  person.email = email;
+  person.phone = phone;
+  var jasonPerson = JSON.stringify(person);
+}
+function displayUsers()
 {
+  let xhr = new XMLHttpRequest();
+  xhr.open('GET', 'https://jsonplaceholder.typicode.com/users', true);
+  xhr.responseType = 'json';
+  xhr.send.
   xhr.onload = () => {
     let status = xhr.status;
     if (status == 200) {
