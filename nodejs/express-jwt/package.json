@@ -1,5 +1,5 @@
 {
-  "name": "expressjs-learning",
+  "name": "express-jwt",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,9 +7,5 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.17.1",
-    "jade": "^1.11.0"
-  }
+  "license": "ISC"
 }

@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>User Details</title>
   </head>
   <body>
-    <form>
+    <form method="POST" action="http://localhost:8000/adduser">
       <fieldset>
       <label for="fname">First Name:</label>
       <input type="text" id="fname" name="fname" /><br /><br />
@@ -13,7 +14,7 @@
       <input type="email" id="email" name="email"><br /><br />
       <label for="phone">Phone Number:</label>
       <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br /><br />
-      <button type="button" onclick="addUser()">Add User</button>
+      <button type="submit">Add User</button>
       <button type="button" onclick="displayUsers()">Display User List</button>
     </fieldset>
     </form>

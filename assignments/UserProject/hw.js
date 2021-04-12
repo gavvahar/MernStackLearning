@@ -15,9 +15,8 @@ function addUser()
 function displayUsers()
 {
   let xhr = new XMLHttpRequest();
-  xhr.open('GET', 'https://jsonplaceholder.typicode.com/users', true);
+  xhr.open('GET', 'http://localhost:8000/users', true);
   xhr.responseType = 'json';
-  xhr.send.
   xhr.onload = () => {
     let status = xhr.status;
     if (status == 200) {
