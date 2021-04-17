@@ -1,6 +1,27 @@
 const express = require("express");
+const bodyParser = require('body-parser');
+const cors = require('cors');
 const app = express();
+app.use(cors());
+app.options('*', cors());
+
+const users = [{
+  fname: 'Harpreet',
+  lname: 'singh',
+  email:'test@test.com',
+  phone: '232323232'
+}];
+
 app.use(express.json());
+// // Configuring body parser middleware
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
+
+app.use(function (req, res, next) {
+  res.header('Content-Type', 'application/json');
+  next();
+});
+
 
 app.get("/", function (req, res) {
   console.log("GET Request Received");
@@ -17,8 +38,14 @@ app.get("/80eighty", function (req, res) {
 });
 // fetch('http://localhost:8080/adduser', {method: 'POST'}).then(res => console.log(res))
 app.post("/adduser", function (req, res) {
-  console.log("POST Request Received");
-  res.send(`<h2>POST Request Received</h2>`);
+  const userObj = req.body;
+
+  console.log(userObj);
+  users.push(userObj);
+});
+app.get("/users", function (req, res) {
+  res.header('Content-Type', 'application/json');
+  res.json(users);
 });
 
 //PORT ENVIRONMENT VARIABLE
