@@ -15,7 +15,7 @@ function addUser()
 function displayUsers()
 {
   let xhr = new XMLHttpRequest();
-  xhr.open('GET', 'http://localhost:8000/users', true);
+  xhr.open('GET', 'http://localhost:8080/users', true);
   xhr.responseType = 'json';
   xhr.onload = () => {
     let status = xhr.status;
