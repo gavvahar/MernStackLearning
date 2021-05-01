@@ -8,6 +8,11 @@ const users = [
     password: "test",
     firstName: "Test",
     lastName: "User",
+    id: 2,
+    username: "gavvahar",
+    password: "jibrgs",
+    firstName: "Nihar",
+    lastName: "Gavva",
   },
 ];
 
