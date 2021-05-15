@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>homework</title>
+  <style>
+  div {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    float: left;
+  }
+  p {
+    clear: left;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    margin: 10px;
+    padding: 2px;
+  }
+  #box1
+  {
+    width: 50px;
+    color: yellow;
+    background-color: blue;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</head>
+<body>
+ 
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+ 
+<b>Subaru </b><p>WRX STI</p>
+ 
+<script>
+$("b").clone().prependTo("p");
+$( "div" ).css( "border", "10px solid black" )
+  .add( "p" )
+  .css( "background", "blue" );
+  $("p").after("<b>Great car</b>")
+  var elementCount = $( "*" ).css( "border", "5px solid red" ).length;
+$( "body" ).prepend( "<h3>" + elementCount + " elements found</h3>" );
+$("div").click(function()
+{
+  console.log("hi")
+})
+</script>
+</body>
+</html>

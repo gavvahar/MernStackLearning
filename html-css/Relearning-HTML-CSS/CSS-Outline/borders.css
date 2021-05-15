@@ -1,0 +1,64 @@
+p.dotted
+{
+    outline: 10px dotted;
+    width: 95%;
+}
+
+p.dashed
+{
+    margin: 30px;
+    border: 10px dashed #ffdb58;
+    outline: 15px dashed #58020b;
+    background: #d20117;
+}
+
+p.solid
+{
+    outline: 15px solid lime;
+}
+
+p.double
+{
+    border-style: double;
+    background-color: red;
+    color: #ffdb58;
+    border-color: black;
+    border-radius: 10px;
+}
+
+p.groove
+{
+    border-style: groove;
+}
+
+p.ridge
+{
+    border-style: ridge;
+}
+
+p.inset
+{
+    border-style: inset;
+}
+
+p.outset
+{
+    border-style: outset;
+}
+
+p.none
+{
+    border-style: none;
+}
+
+p.hidden
+{
+    border-style: hidden;
+}
+
+p.mix
+{
+    border-style: double none double hidden;
+    border-width: thick;
+    border-color: white;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>User Details</title>
+  </head>
+  <body>
+    <form method="POST" action="http://localhost:8080/adduser">
+      <fieldset>
+      <label for="fname">First Name:</label>
+      <input type="text" id="fname" name="fname" /><br /><br />
+      <label for="lname">Last Name:</label>
+      <input type="text" id="lname" name="lname" /><br /><br />
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email"><br /><br />
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br /><br />
+      <button type="submit">Add User</button>
+      <button type="button" onclick="displayUsers()">Display User List</button>
+    </fieldset>
+    </form>
+    <p id="demo"></p>
+    <script type="text/javascript" src="hw.js">
+    </script>
+  </body>
+</html>
