@@ -8,12 +8,6 @@ beforeAll(async () => {
   await mongoose.connect(url, { useNewUrlParser: true });
 });
 
-describe("My Test Suite", () => {
-  it("My Test Case", () => {
-    expect(true).toEqual(true);
-  });
-});
-
 describe("Category Endpoints", () => {
   it("should create a new category", async () => {
     const res = await request(app).post("/api/category").send({
@@ -21,5 +15,10 @@ describe("Category Endpoints", () => {
       description: "Bestsellers pizza",
     });
     expect(res.statusCode).toEqual(201);
+  });
+
+  it("should get list of category", async () => {
+    const res = await request(app).get("/api/category").send();
+    expect(res.statusCode).toEqual(200);
   });
 });
