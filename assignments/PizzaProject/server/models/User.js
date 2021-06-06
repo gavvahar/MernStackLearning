@@ -1,15 +1,15 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-const pizzaSchema = new Schema({
-  title: {
+const userSchema = new Schema({
+  name: {
     type: String,
     required: true,
   },
-  categoryId: {
+  email: {
     type: String,
   },
 });
 
-const Pizza = mongoose.model("Pizza", pizzaSchema);
-module.exports = Pizza;
+const User = mongoose.model("User", userSchema);
+module.exports = User;
