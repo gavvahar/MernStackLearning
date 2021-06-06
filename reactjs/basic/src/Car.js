@@ -1,4 +1,4 @@
-function Car({ year}, {make}, {model})
+function Car({ year, make, model})
 {
     return <table>
         <tr>

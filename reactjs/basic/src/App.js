@@ -12,7 +12,7 @@ function App() {
         <Text title="HEllo2" />
        </header>
       <p>
-        <Car year="1967"  make="Ford" model="GTX" />
+        <Car year="1967"  make="Ford" model="Shelby GT500" />
       </p>
     </div>
   );
