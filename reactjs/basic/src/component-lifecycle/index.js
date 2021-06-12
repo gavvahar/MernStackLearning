@@ -14,6 +14,7 @@ class ComponentLifeCycle extends React.Component {
 			counter: 0,
 			show: false
 		};
+		this.callRef = React.createRef();
 
 		this.toggle = this.toggle.bind(this);
 		this.incrementCounter = this.incrementCounter.bind(this);
@@ -51,12 +52,14 @@ class ComponentLifeCycle extends React.Component {
 	}
 
 	toggle() {
+		console.log(this.callRef.current);
 		this.setState({
 			show: !this.state.show
 		});
 	}
 
-	incrementCounter() {
+	incrementCounter(event) {
+		console.log(event);
 		this.setState({
 			counter: this.state.counter + 1
 		});
@@ -90,6 +93,7 @@ class ComponentLifeCycle extends React.Component {
 								type="button"
 								className="btn btn-success"
 								onClick={this.incrementCounter}
+								ref={this.callRef}
 							>
                 Increment
 							</button>

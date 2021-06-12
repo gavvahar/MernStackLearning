@@ -17,9 +17,11 @@ class Counter extends React.Component {
 		console.debug('Child: componentDidMount');
 	}
 
-	shouldComponentUpdate() {
-		console.debug('Child: shouldComponentUpdate');
-
+	shouldComponentUpdate(nextProps) {
+		console.debug('Child: shouldComponentUpdate', nextProps);
+		if(nextProps.value === 5) {
+			return false;
+		}
 		return true;
 	}
 
