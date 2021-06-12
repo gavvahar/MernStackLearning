@@ -16,6 +16,6 @@ app.use(express.json());
 const routes = require("./routes");
 app.use("/api", routes);
 
-app.listen(3002, () => console.log(`server has started at port ${3000}`));
+app.listen(3000, () => console.log(`server has started at port ${3000}`));
 
 module.exports = app;

@@ -1,12 +1,12 @@
 const express = require("express");
 const router = express.Router();
-const UserModal = require("../models/User");
+const OrderModal = require("../models/Order");
 
 //Get All
 router.get("/", async (req, res) => {
   try {
-    const users = await UserModal.find();
-    res.json(users);
+    const orders = await OrderModal.find();
+    res.json(orders);
   } catch (err) {
     res.status(500).json({ message: err.message });
   }
@@ -15,7 +15,7 @@ router.get("/", async (req, res) => {
 //Get One
 router.get("/:id", async (req, res) => {
   try {
-    user = await UserModal.findById(req.params.id);
+    user = await OrderModal.findById(req.params.id);
     if (user == null) {
       return res.status(404).json({ message: "Cannot find User" });
     }
@@ -26,10 +26,11 @@ router.get("/:id", async (req, res) => {
 
 //Create One
 router.post("/", async (req, res) => {
-  const userObj = new UserModal({
-    name: req.body.name,
-    email: req.body.email,
-    phoneNumber: req.body.phoneNumber,
+  const userObj = new OrderModal({
+    userId: req.body.userId,
+    pizzaId: req.body.pizzaId,
+    quantity: req.body.quantity,
+    toppings: req.body.toppings,
   });
   try {
     const newUser = await userObj.save();
