@@ -26,7 +26,7 @@ router.get("/:id", async (req, res) => {
 
 //Create One
 router.post("/", async (req, res) => {
-  const userObj = new OrderModal({
+  const orderObj = new OrderModal({
     userId: req.body.userId,
     pizzaId: req.body.pizzaId,
     quantity: req.body.quantity,
