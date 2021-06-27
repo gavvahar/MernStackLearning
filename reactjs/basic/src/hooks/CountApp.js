@@ -18,8 +18,8 @@ function CountApp() {
   return (
     <div>
       <p>You clicked {count} times</p>
-      <button onClick={() => setCount(count + 1)}>Click me</button>
-      {count === 5 && <ChildApp />}
+      <button onClick={() => setCount(count + 1)}>Start count</button>
+      {count === 18 && <ChildApp />}
       {users.map(u => u.name)}
     </div>
   );
@@ -27,9 +27,10 @@ function CountApp() {
 
 function ChildApp() {
   useEffect(() => {
-    console.log("ChildApp useEffect .... ");
+    console.log("ChildApp useEffect ....");
     return () => {
-      console.log("ChildApp unmount .... ");
+      console.log("ChildApp unmount ....");
+      console.log({CountApp});
     };
   }, []);
 
