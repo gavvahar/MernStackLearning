@@ -1,8 +1,10 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import { render, screen } from "@testing-library/react";
+import App from "./App";
 
-test('renders learn react link', () => {
+test("hello styled components should render", () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  // const linkElement = screen.getByText(/learn react/i);
+  // expect(linkElement).toBeInTheDocument();
+  expect(screen.getByText("Hello styled components")).toBeInTheDocument();
+  expect(screen.getByText("Styled Components Example")).toBeInTheDocument();
 });
