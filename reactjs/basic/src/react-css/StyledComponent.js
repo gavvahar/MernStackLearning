@@ -32,10 +32,10 @@ class App extends React.Component {
     `;
     return (
       <div>
-        <Title>Styled Components Example</Title>
+        <Title>Mod Shop</Title>
         <p></p>
-        <Div hoverColor="Orange">
-          <Paragraph>Hello MERN stack!!</Paragraph>
+        <Div hoverColor="Blue">
+          <Paragraph>Matte black wide body air suspension Nissan GTR R35</Paragraph>
         </Div>
         <DivElement2 fontSize="20px">Hello styled components</DivElement2>
       </div>
